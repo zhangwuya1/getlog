@@ -5,7 +5,7 @@
 #description:This script is used to get the demo and production environment docker project logs.
 
 ProName=(8301-lms-test-1.0 8302-lms-qti-1.0 8303-lms-user-1.0 8304-lms-mid-1.0)
-Date=`date +%H%M-%m%d%Y`
+Date=`date +%H%M%S-%m%d%Y`
 HostIp=`hostname -I|awk '{print $1}'`
 
 if   [ "$1" -eq 1 ];then
