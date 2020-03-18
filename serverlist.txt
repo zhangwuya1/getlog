@@ -1,13 +1,13 @@
 task-api	9002	/mnt/tech_project/apache-tomcat-7.0.93-9002-task-api
 zbes-api	9004	/mnt/tech_project/apache-tomcat-7.0.93-9004-zbes-api
 zbes		8081	/mnt/tech_project/apache-tomcat-7.0.93-8081-zbes
-tech_task	8086	/mnt/tech_project/apache-tomcat-7.0.93-8086-tech_task
+tech-task	8086	/mnt/tech_project/apache-tomcat-7.0.93-8086-tech_task
 projectManage	8087	/mnt/tech_project/apache-tomcat-7.0.93-8084-projectManage
 zbgedu-hkt	8097	/mnt/tech_project/apache-tomcat-7.0.93-8087-zbgedu-hkt
 api		8081	/mnt/tech_project/apache-tomcat-7.0.93-8081-api
 coursecenter	8097	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8097-coursecenter
 coursecachecenter	8095	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8095
-message		8092	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8092
+message-server		8092	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8092
 ordercenter	8093	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8093
 base		8096	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8096
 taskprogress	8094	/mnt/tech_project/dubboservice/apache-tomcat-7.0.93-8094

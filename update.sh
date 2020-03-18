@@ -40,6 +40,12 @@ if [ ! -s $PackDir ];then
 			fi
 			tar zcf $RootName$Date.tar.gz $RootName
 ############################################################################Update_Pr
+cd $ProDir && ./bin/shutdown.sh
+			if [ `ps -ef|grep $PortNum|grep -v grep|wc -l` -ne 0 ]
+			        then
+			            kill -9 `ps -ef|grep $PortNum|grep -v grep |awk '{print $2}'`
+			fi
+
 			mkdir -p /home/zh/$PackName && tar xf $PackDir/$PackName*.tar.gz -C /home/zh/$PackName --strip-components 1
 			\cp  -r /home/zh/$PackName/*  $RootDir/$RootName/
 			if [ $? -eq 0 ]	
@@ -48,11 +54,7 @@ if [ ! -s $PackDir ];then
 		          	  rm -f $PackDir/$PackName*
 			fi
 ############################################################################Shut_Start
-			cd $ProDir && ./bin/shutdown.sh
-			if [ `ps -ef|grep $PortNum|grep -v grep|wc -l` -ne 0 ]
-			        then
-			            kill -9 `ps -ef|grep $PortNum|grep -v grep |awk '{print $2}'`
-			fi
+			
 			./bin/startup.sh && tail -f ./logs/catalina.out >/root/.hui/$PackName.log 2>1&
 		    sleep 2
 		fi
